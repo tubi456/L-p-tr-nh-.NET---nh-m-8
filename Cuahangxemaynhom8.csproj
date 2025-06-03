@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05FA8DBB-950F-40E1-9EEF-55023DD8522A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Cuahangxemaynhom8</RootNamespace>
+    <AssemblyName>Cuahangxemaynhom8</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp">
+      <HintPath>C:\Users\Admin\.nuget\packages\fontawesome.sharp\6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaoCaoBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoBanHang.Designer.cs">
+      <DependentUpon>BaoCaoBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoDoanhThu.Designer.cs">
+      <DependentUpon>BaoCaoDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoNhapHang.Designer.cs">
+      <DependentUpon>BaoCaoNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangnhap.Designer.cs">
+      <DependentUpon>Dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function.cs" />
+    <Compile Include="Hóa đơn nhập.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hóa đơn nhập.Designer.cs">
+      <DependentUpon>Hóa đơn nhập.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HĐB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HĐB.Designer.cs">
+      <DependentUpon>HĐB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Khachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Khachhang.Designer.cs">
+      <DependentUpon>Khachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhaCungCap.Designer.cs">
+      <DependentUpon>NhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVien.Designer.cs">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyCuaHangBanXeMayDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyCuaHangBanXeMayDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyCuaHangBanXeMayDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyCuaHangBanXeMayDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyCuaHangBanXeMayDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyCuaHangBanXeMayDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyCuaHangBanXeMayDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sanpham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sanpham.Designer.cs">
+      <DependentUpon>Sanpham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimkiemHDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimkiemHDB.Designer.cs">
+      <DependentUpon>TimkiemHDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimkiemHDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimkiemHDN.Designer.cs">
+      <DependentUpon>TimkiemHDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trangchu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trangchu.Designer.cs">
+      <DependentUpon>Trangchu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaoCaoBanHang.resx">
+      <DependentUpon>BaoCaoBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoDoanhThu.resx">
+      <DependentUpon>BaoCaoDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoNhapHang.resx">
+      <DependentUpon>BaoCaoNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dangnhap.resx">
+      <DependentUpon>Dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hóa đơn nhập.resx">
+      <DependentUpon>Hóa đơn nhập.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HĐB.resx">
+      <DependentUpon>HĐB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Khachhang.resx">
+      <DependentUpon>Khachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhaCungCap.resx">
+      <DependentUpon>NhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien.resx">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportBH.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDT.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportNH.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sanpham.resx">
+      <DependentUpon>Sanpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimkiemHDB.resx">
+      <DependentUpon>TimkiemHDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimkiemHDN.resx">
+      <DependentUpon>TimkiemHDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trangchu.resx">
+      <DependentUpon>Trangchu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QuanLyCuaHangBanXeMayDataSet.xsc">
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyCuaHangBanXeMayDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet.xss">
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet1.xsc">
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyCuaHangBanXeMayDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet1.xss">
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet2.xsc">
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyCuaHangBanXeMayDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet2.xss">
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet3.xsc">
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyCuaHangBanXeMayDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet3.xss">
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet4.xsc">
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyCuaHangBanXeMayDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet4.xss">
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet5.xsc">
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyCuaHangBanXeMayDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet5.xss">
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet6.xsc">
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyCuaHangBanXeMayDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyCuaHangBanXeMayDataSet6.xss">
+      <DependentUpon>QuanLyCuaHangBanXeMayDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\z6627424030975_04ba4f7e098dbc3a3035015189623f7c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z6627581356304_e6ef0f2bc119f18a102c40b3d5ebfd4d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z6627424030975_04ba4f7e098dbc3a3035015189623f7c1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Guna.UI2.WinForms">
+      <Version>2.0.4.7</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.ReportingServices.ReportViewerControl.Winforms">
+      <Version>150.1652.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
